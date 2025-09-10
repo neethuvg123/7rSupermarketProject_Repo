@@ -19,8 +19,8 @@ public class ManageCategoryPage {
 
 	}
 
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']")
-	WebElement moreinfo;
+	//@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']")
+	//WebElement moreinfo;
 
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Category/add' and @onclick='click_button(1)']")
 	WebElement newbutton;
@@ -45,44 +45,51 @@ public class ManageCategoryPage {
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
 
-	public void moreinfo() {
+	/*public void moreinfo() {
 		moreinfo.click();
-	}
+	}*/
 
-	public void newbutton() {
+	public ManageCategoryPage newbutton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void category(String value) {
+	public ManageCategoryPage category(String value) {
 
 		category.sendKeys(value);
+		return this;
 	}
 
-	public void groupselect() {
+	public ManageCategoryPage groupselect() {
 		PageUtility page = new PageUtility();
 		page.javaScriptclick(driver, selectgroup);
+		return this;
 	}
 
-	public void choosefile() {
+	public ManageCategoryPage choosefile() {
 		yesbutton.click();
 		FileUploadUtility file = new FileUploadUtility();
 		file.fileUploadUsingSendKeys(choosefile, Constant.TESTDATAIMAGE4);
+		return this;
 	}
 
-	public void clickTopMenu() {
+	public ManageCategoryPage clickTopMenu() {
 		PageUtility page = new PageUtility();
 		page.scrollFromTop(driver);
 		page.javaScriptclick(driver, yesbutton);
+		return this;
 	}
 
-	public void clickSowHome() {
+	public ManageCategoryPage clickSowHome() {
 		PageUtility page = new PageUtility();
 		page.javaScriptclick(driver, radiobutton);
+		return this;
 	}
 
-	public void saveButton() {
+	public ManageCategoryPage saveButton() {
 		PageUtility page = new PageUtility();
 		page.javaScriptclick(driver, save);
+		return this;
 	}
 
 	public boolean viewAlert() {

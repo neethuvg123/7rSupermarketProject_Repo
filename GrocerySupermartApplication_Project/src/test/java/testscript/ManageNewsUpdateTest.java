@@ -29,12 +29,11 @@ public class ManageNewsUpdateTest extends Base {
 		managenewsupdatepage.enterSearcMsg(msgs);
 		managenewsupdatepage.searcButtonClicks();
 		managenewsupdatepage.tableSerach();
-		managenewsupdatepage.actionButonClick();
+		//managenewsupdatepage.actionButonClick();
 		String msg = ExcelUtility.getStringData(4, 1, "ManageNewsUpdate");
 		managenewsupdatepage.enterTextMsg(msg);
 		managenewsupdatepage.clickUpdateButon();
 		boolean alertmsg = managenewsupdatepage.alertMsgDisplay();
 		Assert.assertTrue(alertmsg,Constant.ALERT_MSG_DISPLAY);
-
 	}
 }

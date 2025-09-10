@@ -5,10 +5,10 @@
   <test name="EdgeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-  
-      <class name="testscript.ManageNewsUpdateTest">
-      
-      </class>
+    <class name="testscript.ManageCategoryTest"/> 
+      <class name="testscript.AdminUserTest"/>
+      <class name="testscript.ManageContactTest"/> 
+    
     </classes>
   </test> 
 </suite> <!-- Suite -->

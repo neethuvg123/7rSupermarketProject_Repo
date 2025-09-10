@@ -14,7 +14,7 @@ public class ManageFooterPage {
 		
 	}
 	
-  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']") WebElement moreinfo;
+ // @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']") WebElement moreinfo;
 	
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1' and @role='button']//child::i")WebElement button;
 
@@ -29,10 +29,10 @@ public class ManageFooterPage {
      
      @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alerts;
 
-public void clickMoreInfo()
+/*public void clickMoreInfo()
 {
 	moreinfo.click();
-}
+}*/
 
 public void clickButton()
 {

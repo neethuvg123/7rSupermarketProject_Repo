@@ -20,7 +20,7 @@ public class ManageNewsUpdatePage {
 	}
 	
 	
-	@FindBy(xpath="//div[@class='row']//div[7]//a") WebElement moreinfo;
+	//@FindBy(xpath="//div[@class='row']//div[7]//a") WebElement moreinfo;
 	
 	@FindBy(xpath="//a[@onclick='click_button(2)']") WebElement searcbutton;
 	
@@ -39,9 +39,9 @@ public class ManageNewsUpdatePage {
 	
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]") List<WebElement> tabledatas;
 	
-	public void moreInfo() {
+	/*public void moreInfo() {
 		moreinfo.click();
-	}
+	}*/
 	
 	
 	public void searcButtonClick()
@@ -78,13 +78,13 @@ public class ManageNewsUpdatePage {
 
 
 	
-	public void actionButonClick()
+	/*public void actionButonClick()
 	{
 		
 		//actionbutton.click();
 		PageUtility page=new PageUtility();
 		page.javaScriptclick(driver, actionbutton);
-	}
+	}*/
 	
 	public void enterTextMsg(String msgs)
 	{

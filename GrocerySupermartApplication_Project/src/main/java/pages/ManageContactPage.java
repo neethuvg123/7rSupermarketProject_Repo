@@ -17,7 +17,7 @@ public class ManageContactPage {
 		
 	}
 	
-  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']") WebElement moreinfo;
+ // @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-contact' and @class='small-box-footer']") WebElement moreinfo;
   
   @FindBy(xpath="//i[@class='fas fa-edit']") WebElement actionbutton;
 	
@@ -37,67 +37,71 @@ public class ManageContactPage {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alerts;
 	
 	//@FindBy(xpath="//button[@aria-hidden='true']//parent::div")WebElement alerts;
-	public void clickmoreinfo()
+	
+	/*public void clickmoreinfo()
 	{
 		moreinfo.click();
-	}
+	}*/
 	
-	public void clickAction()
+	public ManageContactPage clickAction()
 	{
 		actionbutton.click();
+		return this;
 	}
 	
 	
-	public void updatePhone(String phonno)
+	public ManageContactPage updatePhone(String phonno)
 	
-	{
-		phone.clear();
-		
-	
+	{   phone.clear();
 		phone.sendKeys(phonno);
+		return this;
 	}
 	
-	public void updateEmail(String emailid)
+	public ManageContactPage updateEmail(String emailid)
 	{
 		email.clear();
 		email.sendKeys(emailid);
+		return this;
 	}
 	
-	public void updateAddress(String add)
+	public ManageContactPage updateAddress(String add)
 	{
 		address.clear();
 		address.sendKeys(add);
+		return this;
 	}
-	public void updateDeliveryTime(String time)
+	public ManageContactPage updateDeliveryTime(String time)
 	{
 		delivtime.clear();
 	delivtime.sendKeys(time);
+	return this;
 	}
 
-	public void updateDeliveryCharge(String charges)
+	public ManageContactPage updateDeliveryCharge(String charges)
 	{
 		PageUtility page=new PageUtility();
 	page.scrollFromTop(driver);
 	delivcharge.clear();
 	delivcharge.sendKeys(charges);
+	return this;
 }
 	
-	public void clickUpdate()
-	
+	public ManageContactPage clickUpdate()
 	{
-		
-	//WaitUtility wait=new WaitUtility();
-	//wait.waitForElement(driver, buton);
 		PageUtility page=new PageUtility();
 		//page.scrollFromTop(driver);
 		page.javaScriptclick(driver,buton);
 		//page.actionClick(driver, buton);
 		//buton.click();
+		return this;
 	}
 	
 	public boolean viewAlert()
 	{
 		return alerts.isDisplayed();
 	}
-
+  public boolean updateBtnEnabled()
+  {
+	  return buton.isEnabled();
+  }
 }

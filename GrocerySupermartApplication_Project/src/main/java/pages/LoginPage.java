@@ -25,19 +25,22 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void enterUsername(String username)
+	public LoginPage enterUsername(String username)
 	{
 		admin.sendKeys(username);
+		return this;
 	}
 	
-	public void enterPassword(String password2)
+	public LoginPage enterPassword(String password2)
 	{
 		password.sendKeys(password2);
+		return this;
 	}
 	
-	public void clickSignin()
+	public LogOutPage clickSignin()
 	{
 		signin.click();
+		return new LogOutPage(driver);
 	}
 	
 	public boolean isdashboardView()

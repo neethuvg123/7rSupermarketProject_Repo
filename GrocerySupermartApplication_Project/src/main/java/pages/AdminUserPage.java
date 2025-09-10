@@ -18,8 +18,8 @@ public class AdminUserPage {
 
 	}
 
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
-	WebElement moreinfo;
+	//@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
+	//WebElement moreinfo;
 
 	@FindBy(xpath = "//a[@href='javascript:void(0)']//child::i")
 	WebElement newButton;
@@ -39,29 +39,34 @@ public class AdminUserPage {
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement alerts;
 
-	public void clickMoreInfo() {
+	/*public void clickMoreInfo() {
 		moreinfo.click();
-	}
+	}*/
 
-	public void clickNewButton() {
+	public AdminUserPage clickNewButton() {
 		newButton.click();
+		return this;
 	}
 
-	public void updateUserame(String username) {
+	public AdminUserPage updateUserame(String username) {
 		usernametextbox.sendKeys(username);
+		return this;
 	}
 
-	public void updatePassword(String password) {
+	public AdminUserPage updatePassword(String password) {
 		passwordtextbox.sendKeys(password);
+		return this;
 	}
 
-	public void enterOption() {
+	public AdminUserPage enterOption() {
 		PageUtility page = new PageUtility();
 		page.selectByVisibleText(selectoption, "Staff");
+		return this;
 	}
 
-	public void clickSave() {
+	public AdminUserPage clickSave() {
 		savebutton.click();
+		return this;
 	}
 
 	public boolean viewAlertmsg() {

@@ -15,7 +15,7 @@ public class ManageNewsPage {
 	}
 	
 	
-	@FindBy(xpath="//div[@class='row']//div[7]//a") WebElement moreinfo;
+	//@FindBy(xpath="//div[@class='row']//div[7]//a") WebElement moreinfo;
 	
 	@FindBy(xpath="//a[@onclick='click_button(1)']") WebElement newbutton;
 	
@@ -26,9 +26,9 @@ public class ManageNewsPage {
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alert;
 	
 	
-	public void moreInfo() {
+	/*public void moreInfo() {
 		moreinfo.click();
-	}
+	}*/
 	
 	
 	public void newButtonClick()
