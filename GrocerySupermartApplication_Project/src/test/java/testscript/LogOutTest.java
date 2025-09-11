@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class LogOutTest extends Base {
 
-	@Test(description = "user is able to logout")
+	@Test(description = "user is able to logout sucessfully")
 
 	public void verifyUserisAbleToLout() throws IOException {
 
