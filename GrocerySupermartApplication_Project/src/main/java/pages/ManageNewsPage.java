@@ -31,20 +31,23 @@ public class ManageNewsPage {
 	}*/
 	
 	
-	public void newButtonClick()
+	public ManageNewsPage newButtonClick()
 	{
 		newbutton.click();
+		return this;
 	}
 	
-	public void newsTextBox(String msg)
+	public ManageNewsPage newsTextBox(String msg)
 	{
 		news.clear();
 		news.sendKeys(msg);
+		return this;
 	}
 	
-	public void saveButton()
+	public ManageNewsPage saveButton()
 	{
 		save.click();
+		return this;
 	}
 	
 	public boolean alertmsg()

@@ -6,13 +6,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constant;
+import pages.LogOutPage;
 import pages.LoginPage;
 import pages.ManageFooterPage;
 import pages.ManageFooterUpdateBtnPage;
 import utilities.ExcelUtility;
 
 public class ManageFooterTest extends Base {
-
+	 ManageFooterPage managefooterpage;
+	 LogOutPage logout;
+	
+	
 	@Test(retryAnalyzer = retry.Retry.class, description = "User is able to access the Manage Footer Page", groups= {"regression"})
 
 	public void verifyUserIsAbletoAccessManageFooterPage() throws IOException {
@@ -21,21 +25,23 @@ public class ManageFooterTest extends Base {
 
 		LoginPage loginpage = new LoginPage(driver);
 
-		loginpage.enterUsername(username);
-		loginpage.enterPassword(password);
-		loginpage.clickSignin();
+		loginpage.enterUsername(username).enterPassword(password);
+		//loginpage.enterPassword(password);
+		logout=loginpage.clickSignin();
 
-		ManageFooterPage managefooterpage = new ManageFooterPage(driver);
-		managefooterpage.clickMoreInfo();
-		managefooterpage.clickButton();
-
+		//ManageFooterPage managefooterpage = new ManageFooterPage(driver);
+		managefooterpage=logout.moreinfo_manageFooterpage();
+		
 		String address = ExcelUtility.getStringData(2, 0, "ManageFooterPage");
 		String email = ExcelUtility.getStringData(2, 1, "ManageFooterPage");
 		String phone = ExcelUtility.getIntegerData(2, 2, "ManageFooterPage");
-		managefooterpage.updateAddress(address);
+		
+		managefooterpage.clickButton().updateAddress(address).updateEmail(email).updatePhone(phone).clickUpdateButton();
+
+		/*managefooterpage.updateAddress(address);
 		managefooterpage.updateEmail(email);
 		managefooterpage.updatePhone(phone);
-		managefooterpage.clickUpdateButton();
+		managefooterpage.clickUpdateButton();*/
 
 		boolean msg = managefooterpage.alertViewAlertMessage();
 		Assert.assertTrue(msg,Constant. ALERT_MSG_DISPLAY);
@@ -47,13 +53,13 @@ public class ManageFooterTest extends Base {
 		String username = ExcelUtility.getStringData(1, 0, "LoginPage");
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUsername(username);
-		loginpage.enterPassword(password);
-		loginpage.clickSignin();
-		ManageFooterUpdateBtnPage managefooterupdatebtnpage = new ManageFooterUpdateBtnPage(driver);
-		managefooterupdatebtnpage.clickMoreInfo();
-		managefooterupdatebtnpage.clickButton();
-		boolean alertmsg = managefooterupdatebtnpage.clickUpdateButton();
+		loginpage.enterUsername(username).enterPassword(password);
+		//loginpage.enterPassword(password);
+	logout=	loginpage.clickSignin();
+		//ManageFooterPage managefooterupdatebtnpage = new ManageFooterPage(driver);
+		managefooterpage=logout.moreinfo_manageFooterpage();
+		managefooterpage.clickButton();
+		boolean alertmsg = managefooterpage.updateButonEnabled();
 		Assert.assertTrue(alertmsg,Constant.UPDATE_BTN);
 	}
 

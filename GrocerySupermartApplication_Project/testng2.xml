@@ -3,11 +3,11 @@
 <suite name="Suite">
 
   <test name="EdgeTest">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="edge"></parameter>
     <classes>
-    <class name="testscript.ManageCategoryTest"/> 
-      <class name="testscript.AdminUserTest"/>
+    
       <class name="testscript.ManageContactTest"/> 
+          <class name="testscript.ManageFooterTest"/>
     
     </classes>
   </test> 

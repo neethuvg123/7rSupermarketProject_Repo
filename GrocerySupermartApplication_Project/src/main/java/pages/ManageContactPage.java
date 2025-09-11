@@ -33,8 +33,8 @@ public class ManageContactPage {
 	
 	@FindBy(xpath="//button[@type='submit' and @name='Update']") WebElement buton;
 	
-	//@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alerts;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alerts;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alerts;
+	//@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alerts;
 	
 	//@FindBy(xpath="//button[@aria-hidden='true']//parent::div")WebElement alerts;
 	
@@ -89,7 +89,6 @@ public class ManageContactPage {
 	public ManageContactPage clickUpdate()
 	{
 		PageUtility page=new PageUtility();
-		//page.scrollFromTop(driver);
 		page.javaScriptclick(driver,buton);
 		//page.actionClick(driver, buton);
 		//buton.click();

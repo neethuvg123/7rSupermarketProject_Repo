@@ -44,25 +44,28 @@ public class ManageNewsUpdatePage {
 	}*/
 	
 	
-	public void searcButtonClick()
+	public ManageNewsUpdatePage searcButtonClick()
 	{
 		searcbutton.click();
+		return this;
 	}
 
 	
-	public void enterSearcMsg(String msgs)
+	public ManageNewsUpdatePage enterSearcMsg(String msgs)
 	{
 	textbox.sendKeys(msgs);
+	return this;
 	}
 	
 	
-	public void searcButtonClicks()
+	public ManageNewsUpdatePage searcButtonClicks()
 	{
 		searcbutton2.click();
+		return this;
 	}
 	
 
-	public void tableSerach()
+	public ManageNewsUpdatePage tableSerach()
 	{
 		for (WebElement tabledata : tabledatas) 
 		{
@@ -73,6 +76,7 @@ public class ManageNewsUpdatePage {
 				page.javaScriptclick(driver, actionbutton);
 				} 
 		}
+		return this;
 	}
          
 
@@ -86,15 +90,17 @@ public class ManageNewsUpdatePage {
 		page.javaScriptclick(driver, actionbutton);
 	}*/
 	
-	public void enterTextMsg(String msgs)
+	public ManageNewsUpdatePage enterTextMsg(String msgs)
 	{
-		textareanews.clear();
+	textareanews.clear();
 	textareanews.sendKeys(msgs);
+	return this;
 	}
 	
-	public void clickUpdateButon()
+	public ManageNewsUpdatePage clickUpdateButon()
 	{
 		updatebutton.click();
+		return this;
 	}
 	
 	

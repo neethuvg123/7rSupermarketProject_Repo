@@ -34,37 +34,48 @@ public class ManageFooterPage {
 	moreinfo.click();
 }*/
 
-public void clickButton()
+public ManageFooterPage clickButton()
 {
 	button.click();
+	return this;
 }
 
-public void updateAddress(String addres)
+public ManageFooterPage updateAddress(String addres)
 {
 	address.clear();
 	address.sendKeys(addres);
+	return this;
 }
 
-public void updateEmail(String emailid)
+public ManageFooterPage updateEmail(String emailid)
 {
 	email.clear();
 	email.sendKeys(emailid);
+	return this;
 }
 
 
-public void updatePhone(String number)
+public ManageFooterPage updatePhone(String number)
 {
 	phone.clear();
 	phone.sendKeys(number);
+	return this;
 }
 
-public void clickUpdateButton()
+public ManageFooterPage clickUpdateButton()
 {
 	updatebutton.click();
+	return this;
 }
 
 public boolean alertViewAlertMessage()
 {
 	return alerts.isDisplayed();
 }
+
+public boolean updateButonEnabled()
+{
+	return updatebutton.isEnabled();
+}
+
 }
