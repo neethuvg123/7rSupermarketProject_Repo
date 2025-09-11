@@ -13,9 +13,9 @@ import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base {
 
-	 ManageNewsPage managenewspage;
-	 LogOutPage logout;
-	 
+	ManageNewsPage managenewspage;
+	LogOutPage logout;
+
 	@Test(retryAnalyzer = retry.Retry.class, description = "User is able to access the Manage News Page")
 
 	public void verifyUserisAbleToAccessManageNewsPage() throws IOException {
@@ -23,20 +23,12 @@ public class ManageNewsTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(username).enterPassword(password);
-		//loginpage.enterPassword(password);
-		
-		logout=loginpage.clickSignin();
+		logout = loginpage.clickSignin();
 		String textmsg = ExcelUtility.getStringData(3, 0, "ManageNewsPage");
-		//ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		
-		managenewspage=logout.moreinfo_manageNewsPage();
+		managenewspage = logout.moreinfo_manageNewsPage();
 		managenewspage.newButtonClick().newsTextBox(textmsg).saveButton();
-		
-		/*managenewspage.newsTextBox(textmsg);
-		managenewspage.saveButton();*/
-		
 		boolean alerts = managenewspage.alertmsg();
-		Assert.assertTrue(alerts,Constant.ALERT_MSG_DISPLAY);
+		Assert.assertTrue(alerts, Constant.ALERT_MSG_DISPLAY);
 
 	}
 

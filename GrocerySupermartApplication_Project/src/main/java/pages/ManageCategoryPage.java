@@ -13,15 +13,10 @@ public class ManageCategoryPage {
 	public WebDriver driver;
 
 	public ManageCategoryPage(WebDriver driver) {
-
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
-
-	//@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']")
-	//WebElement moreinfo;
-
+	
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Category/add' and @onclick='click_button(1)']")
 	WebElement newbutton;
 
@@ -44,10 +39,6 @@ public class ManageCategoryPage {
 
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
-
-	/*public void moreinfo() {
-		moreinfo.click();
-	}*/
 
 	public ManageCategoryPage newbutton() {
 		newbutton.click();

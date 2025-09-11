@@ -4,13 +4,6 @@
   <test thread-count="5" parallel="tests" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.LoginTest">
-        <methods>
-          <include name="browserIntialization"/>
-          <include name="verifyUserIsAbleToLoginUsingInvalidCredentials"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.LoginTest -->
       <class name="testscript.ManageNewsUpdateTest">
         <methods>
           <include name="browserIntialization"/>
@@ -18,13 +11,6 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.ManageNewsUpdateTest -->
-      <class name="testscript.ManageNewsTest">
-        <methods>
-          <include name="browserIntialization"/>
-          <include name="verifyUserisAbleToAccessManageNewsPage"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.ManageNewsTest -->
     </classes>
   </test> <!-- chromeTest(failed) -->
   <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
@@ -33,7 +19,7 @@
       <class name="testscript.LoginTest">
         <methods>
           <include name="browserIntialization"/>
-          <include name="verifyUserIsAbleToLoginUsingInvalidCredentials"/>
+          <include name="verifyUserIsAbletoLoginUsingInvalidPassword"/>
           <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
@@ -44,13 +30,6 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.ManageNewsUpdateTest -->
-      <class name="testscript.AdminUserTest">
-        <methods>
-          <include name="verifyUserIsAbletoClickAdminUser"/>
-          <include name="browserIntialization"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.AdminUserTest -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [multiBrowserTesting] -->

@@ -22,20 +22,20 @@ public class ManageNewsUpdateTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(username).enterPassword(password);
-		//loginpage.enterPassword(password);
 		logout=loginpage.clickSignin();
-		//ManageNewsUpdatePage managenewsupdatepage = new ManageNewsUpdatePage(driver);
 		managenewsupdatepage=logout.moreinfo_manageNesUpdatePage();
 		
 		
 		String msgs = ExcelUtility.getStringData(4, 0, "ManageNewsUpdate");
 		managenewsupdatepage.searcButtonClick().enterSearcMsg(msgs).searcButtonClicks().tableSerach().enterTextMsg(msgs).clickUpdateButon();
 		
+		
+		String msg = ExcelUtility.getStringData(4, 1, "ManageNewsUpdate");
 		/*managenewsupdatepage.enterSearcMsg(msgs);
 		managenewsupdatepage.searcButtonClicks();
 		managenewsupdatepage.tableSerach();
 		//managenewsupdatepage.actionButonClick();
-		String msg = ExcelUtility.getStringData(4, 1, "ManageNewsUpdate");
+		
 		managenewsupdatepage.enterTextMsg(msg);
 		managenewsupdatepage.clickUpdateButon();*/
 		

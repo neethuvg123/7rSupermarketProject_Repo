@@ -4,6 +4,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="testscript.LoginTest">
+        <methods>
+          <include name="verifyUserisAbleToLoginWithInvalidUsername"/>
+          <include name="browserIntialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.LoginTest -->
       <class name="testscript.ManageNewsUpdateTest">
         <methods>
           <include name="browserIntialization"/>
@@ -11,18 +18,18 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.ManageNewsUpdateTest -->
-      <class name="testscript.AdminUserTest">
-        <methods>
-          <include name="verifyUserIsAbletoClickAdminUser"/>
-          <include name="browserIntialization"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.AdminUserTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="5" name="EdgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
+      <class name="testscript.LoginTest">
+        <methods>
+          <include name="verifyUserisAbleToLoginWithInvalidUsername"/>
+          <include name="browserIntialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.LoginTest -->
       <class name="testscript.ManageNewsUpdateTest">
         <methods>
           <include name="validateSaveBtnInManageNews"/>
@@ -30,13 +37,6 @@
           <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.ManageNewsUpdateTest -->
-      <class name="testscript.ManageNewsTest">
-        <methods>
-          <include name="browserIntialization"/>
-          <include name="verifyUserisAbleToAccessManageNewsPage"/>
-          <include name="browserQuit"/>
-        </methods>
-      </class> <!-- testscript.ManageNewsTest -->
       <class name="testscript.AdminUserTest">
         <methods>
           <include name="verifyUserIsAbletoClickAdminUser"/>

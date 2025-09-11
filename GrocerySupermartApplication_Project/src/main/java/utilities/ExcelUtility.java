@@ -18,8 +18,7 @@ public class ExcelUtility {
 	public static String getStringData(int a,int b, String Sheet) throws IOException {
 		
 		String filePath=Constant.TESTDATAFILE;
-		f=new FileInputStream(filePath);
-		  
+		f=new FileInputStream(filePath);  
 		w=new XSSFWorkbook(f);
 		s=w.getSheet(Sheet);
 		XSSFRow r=s.getRow(a);

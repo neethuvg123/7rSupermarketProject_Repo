@@ -5,77 +5,72 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.PageUtility;
+
 public class ManageFooterPage {
 	public WebDriver driver;
-	public ManageFooterPage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
-		
+
+	public ManageFooterPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	
- // @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']") WebElement moreinfo;
-	
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1' and @role='button']//child::i")WebElement button;
 
-     @FindBy(xpath="//textarea[@id='content' and @name='address']")WebElement address;
-     
-     @FindBy(xpath="//input[@id='email']") WebElement email;
-     
-     @FindBy(xpath="//input[@id='phone']") WebElement phone;
-     
-     @FindBy(xpath="//button[@type='submit' and @name='Update']") WebElement updatebutton;
+	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1' and @role='button']//child::i")
+	WebElement button;
 
-     
-     @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alerts;
+	@FindBy(xpath = "//textarea[@id='content' and @name='address']")
+	WebElement address;
 
-/*public void clickMoreInfo()
-{
-	moreinfo.click();
-}*/
+	@FindBy(xpath = "//input[@id='email']")
+	WebElement email;
 
-public ManageFooterPage clickButton()
-{
-	button.click();
-	return this;
-}
+	@FindBy(xpath = "//input[@id='phone']")
+	WebElement phone;
 
-public ManageFooterPage updateAddress(String addres)
-{
-	address.clear();
-	address.sendKeys(addres);
-	return this;
-}
+	@FindBy(xpath = "//button[@type='submit' and @name='Update']")
+	WebElement updatebutton;
 
-public ManageFooterPage updateEmail(String emailid)
-{
-	email.clear();
-	email.sendKeys(emailid);
-	return this;
-}
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement alerts;
 
+	public ManageFooterPage clickButton() {
+		PageUtility page = new PageUtility();
+		page.javaScriptclick(driver, button);
+		// button.click();
+		return this;
+	}
 
-public ManageFooterPage updatePhone(String number)
-{
-	phone.clear();
-	phone.sendKeys(number);
-	return this;
-}
+	public ManageFooterPage updateAddress(String addres) {
+		address.clear();
+		address.sendKeys(addres);
+		return this;
+	}
 
-public ManageFooterPage clickUpdateButton()
-{
-	updatebutton.click();
-	return this;
-}
+	public ManageFooterPage updateEmail(String emailid) {
+		email.clear();
+		email.sendKeys(emailid);
+		return this;
+	}
 
-public boolean alertViewAlertMessage()
-{
-	return alerts.isDisplayed();
-}
+	public ManageFooterPage updatePhone(String number) {
+		phone.clear();
+		phone.sendKeys(number);
+		return this;
+	}
 
-public boolean updateButonEnabled()
-{
-	return updatebutton.isEnabled();
-}
+	public ManageFooterPage clickUpdateButton() {
+		PageUtility page = new PageUtility();
+		page.javaScriptclick(driver, updatebutton);
+		// updatebutton.click();
+		return this;
+	}
+
+	public boolean alertViewAlertMessage() {
+		return alerts.isDisplayed();
+	}
+
+	public boolean updateButonEnabled() {
+		return updatebutton.isEnabled();
+	}
 
 }

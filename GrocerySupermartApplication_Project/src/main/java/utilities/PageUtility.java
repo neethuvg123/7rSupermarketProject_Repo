@@ -10,15 +10,11 @@ public class PageUtility {
 	
 	//dropdown
 	
-	
 			public void selectByVisibleText(WebElement element,String visibleText) {
 				Select select =new Select(element);
 				select.selectByVisibleText(visibleText);
 				
 			}
-			
-			
-			
 			public void selectByValue(WebElement element,String value) {
 				Select select =new Select(element);
 				select.selectByVisibleText(value);	

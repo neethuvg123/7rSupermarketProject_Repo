@@ -12,10 +12,7 @@ public class FileUploadUtility {
 	
 	public void fileUploadUsingSendKeys(WebElement  element,String path) {	
 		element.sendKeys(path);
-	
 	}
-	
-	
 	
 	public void fileUploadUsingRobotClass(WebElement  element,String path) throws AWTException {	
 		StringSelection ss = new StringSelection(path);

@@ -12,14 +12,9 @@ public class AdminUserPage {
 	public WebDriver driver;
 
 	public AdminUserPage(WebDriver driver) {
-
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
-
-	//@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
-	//WebElement moreinfo;
 
 	@FindBy(xpath = "//a[@href='javascript:void(0)']//child::i")
 	WebElement newButton;
@@ -38,10 +33,6 @@ public class AdminUserPage {
 
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
 	WebElement alerts;
-
-	/*public void clickMoreInfo() {
-		moreinfo.click();
-	}*/
 
 	public AdminUserPage clickNewButton() {
 		newButton.click();

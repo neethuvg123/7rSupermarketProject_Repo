@@ -7,7 +7,7 @@
 </listeners>
 
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
      <class name="testscript.ManageCategoryTest"/>    
       <class name="testscript.ManageNewsUpdateTest"/>
