@@ -5,7 +5,11 @@
   <test name="EdgeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testscript.ManageFooterTest"/> 
+      <class name="testscript.ManageFooterTest"> 
+      <methods>
+      <include name=" validateUpdatebtnInManageFooterPage"/>  
+      </methods>
+      </class>
     </classes>
   </test> 
 </suite> <!-- Suite -->

@@ -21,6 +21,4 @@ public static final int IMPLICIT_WAIT=5;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
 		wait.until(ExpectedConditions.visibilityOf(target));
 	}
-
-
 }

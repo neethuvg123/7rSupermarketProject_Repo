@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\user\git\7rSupermarketProject_Repo\GrocerySupermartApplication_Project\testng2.xml</span>
+                    <span>C:\Users\user\git\7rSupermarketProject_Repo\GrocerySupermartApplication_Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,  2 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsUpdateTest" class="method navigator-link" hash-for-method="validateSaveBtnInManageNews">validateSaveBtnInManageNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsUpdateTest" class="method navigator-link" hash-for-method="validateSaveBtnInManageNews">validateSaveBtnInManageNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsUpdateTest" class="method navigator-link" hash-for-method="validateSaveBtnInManageNews">validateSaveBtnInManageNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +136,62 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageContactTest" class="method navigator-link" hash-for-method="validateUpdateBtnInManageContact">validateUpdateBtnInManageContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.ManageFooterTest" class="method navigator-link" hash-for-method="validateUpdatebtnInManageFooterPage">validateUpdatebtnInManageFooterPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToLoginUsingInvalidCredentials">verifyUserIsAbleToLoginUsingInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToLoginUsingValidCredentials">verifyUserIsAbleToLoginUsingValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.ManageFooterTest" class="method navigator-link" hash-for-method="verifyUserIsAbletoAccessManageFooterPage">verifyUserIsAbletoAccessManageFooterPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.AdminUserTest" class="method navigator-link" hash-for-method="verifyUserIsAbletoClickAdminUser">verifyUserIsAbletoClickAdminUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserIsAbletoLoginUsingInvalidPassword(abcde, qwerty)">verifyUserIsAbletoLoginUsingInvalidPassword(abcde, qwerty)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageContactTest" class="method navigator-link" hash-for-method="verifyUserisAbleToAccessManageContactPage">verifyUserisAbleToAccessManageContactPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUserisAbleToAccessManageNewsPage">verifyUserisAbleToAccessManageNewsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyUserisAbleToLoginWithInvalidUsername">verifyUserisAbleToLoginWithInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LogOutTest" class="method navigator-link" hash-for-method="verifyUserisAbleToLout">verifyUserisAbleToLout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyuserIsAbleToAccessManageCategoryPage">verifyuserIsAbleToAccessManageCategoryPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,6 +206,150 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.ManageNewsUpdateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSaveBtnInManageNews">
+                  </a> <!-- validateSaveBtnInManageNews -->
+                  <span class="method-name">validateSaveBtnInManageNews</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//textarea[@id=&apos;news&apos;]&quot;}
+  (Session info: chrome=140.0.7339.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a7ecaf31a1246e503d8be6a5548822a, findElement {using=xpath, value=//textarea[@id=&apos;news&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.127, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55270}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55270/devtoo..., se:cdpVersion: 140.0.7339.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a7ecaf31a1246e503d8be6a5548822a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
+	at pages.ManageNewsUpdatePage.enterTextMsg(ManageNewsUpdatePage.java:80)
+	at testscript.ManageNewsUpdateTest.validateSaveBtnInManageNews(ManageNewsUpdateTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(user is able to update Manage News page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.ManageNewsUpdateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSaveBtnInManageNews">
+                  </a> <!-- validateSaveBtnInManageNews -->
+                  <span class="method-name">validateSaveBtnInManageNews</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//textarea[@id=&apos;news&apos;]&quot;}
+  (Session info: chrome=140.0.7339.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [543b6a823acb0b5fe25db19665c981bd, findElement {using=xpath, value=//textarea[@id=&apos;news&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.127, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55250/devtoo..., se:cdpVersion: 140.0.7339.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 543b6a823acb0b5fe25db19665c981bd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
+	at pages.ManageNewsUpdatePage.enterTextMsg(ManageNewsUpdatePage.java:80)
+	at testscript.ManageNewsUpdateTest.validateSaveBtnInManageNews(ManageNewsUpdateTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(user is able to update Manage News page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSaveBtnInManageNews">
+                  </a> <!-- validateSaveBtnInManageNews -->
+                  <span class="method-name">validateSaveBtnInManageNews</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//textarea[@id=&apos;news&apos;]&quot;}
+  (Session info: chrome=140.0.7339.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585fc8c803b50e209e28cb7bbcefd37a, findElement {using=xpath, value=//textarea[@id=&apos;news&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.127, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55230/devtoo..., se:cdpVersion: 140.0.7339.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 585fc8c803b50e209e28cb7bbcefd37a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.clear(Unknown Source)
+	at pages.ManageNewsUpdatePage.enterTextMsg(ManageNewsUpdatePage.java:80)
+	at testscript.ManageNewsUpdateTest.validateSaveBtnInManageNews(ManageNewsUpdateTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(user is able to update Manage News page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserisAbleToLout">
+                  </a> <!-- verifyUserisAbleToLout -->
+                  <span class="method-name">verifyUserisAbleToLout</span>
+                  <em>
+(user is able to logout sucessfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -149,22 +376,154 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserisAbleToAccessManageNewsPage">
+                  </a> <!-- verifyUserisAbleToAccessManageNewsPage -->
+                  <span class="method-name">verifyUserisAbleToAccessManageNewsPage</span>
+                  <em>
+(User is able to access the Manage News Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyuserIsAbleToAccessManageCategoryPage">
+                  </a> <!-- verifyuserIsAbleToAccessManageCategoryPage -->
+                  <span class="method-name">verifyuserIsAbleToAccessManageCategoryPage</span>
+                  <em>
+( User is able to access Manage Catergory Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.AdminUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbletoClickAdminUser">
+                  </a> <!-- verifyUserIsAbletoClickAdminUser -->
+                  <span class="method-name">verifyUserIsAbletoClickAdminUser</span>
+                  <em>
+(user is able to access te Admin User Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUpdateBtnInManageContact">
+                  </a> <!-- validateUpdateBtnInManageContact -->
+                  <span class="method-name">validateUpdateBtnInManageContact</span>
+                  <em>
+( User his able to validate te UPDATE BUTTON in te page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserisAbleToAccessManageContactPage">
+                  </a> <!-- verifyUserisAbleToAccessManageContactPage -->
+                  <span class="method-name">verifyUserisAbleToAccessManageContactPage</span>
+                  <em>
+( User is able to access te Manage Contact Test page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToLoginUsingInvalidCredentials">
+                  </a> <!-- verifyUserIsAbleToLoginUsingInvalidCredentials -->
+                  <span class="method-name">verifyUserIsAbleToLoginUsingInvalidCredentials</span>
+                  <em>
+(User is able to login using both invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToLoginUsingValidCredentials">
+                  </a> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
+                  <span class="method-name">verifyUserIsAbleToLoginUsingValidCredentials</span>
+                  <em>
+(User is able to login using valid credential)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbletoLoginUsingInvalidPassword(abcde, qwerty)">
+                  </a> <!-- verifyUserIsAbletoLoginUsingInvalidPassword(abcde, qwerty) -->
+                  <span class="method-name">verifyUserIsAbletoLoginUsingInvalidPassword</span>
+                  <span class="parameters">(abcde,qwerty)</span>
+                  <em>
+( user is able to login invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserisAbleToLoginWithInvalidUsername">
+                  </a> <!-- verifyUserisAbleToLoginWithInvalidUsername -->
+                  <span class="method-name">verifyUserisAbleToLoginWithInvalidUsername</span>
+                  <em>
+(user is able to login using invalid username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\git\7rSupermarketProject_Repo\GrocerySupermartApplication_Project\testng2.xml</span>
+            <span class="header-content">C:\Users\user\git\7rSupermarketProject_Repo\GrocerySupermartApplication_Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;generateReport.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testscript.ManageCategoryTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageNewsUpdateTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageContactTest&quot;/&gt;
+      &lt;class name=&quot;testscript.ManageNewsTest&quot;/&gt;
+      &lt;class name=&quot;testscript.LogOutTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageFooterTest&quot;/&gt;
+      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testscript.AdminUserTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- EdgeTest --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,7 +535,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">EdgeTest (1 class)</span>
+                <span class="test-name">Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,6 +550,14 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">verifyUserIsAbletoAccessManageFooterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUserisAbleToAccessManageContactPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyuserIsAbleToAccessManageCategoryPage</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -210,20 +577,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateUpdatebtnInManageFooterPage')
-data.setCell(0, 2, 'testscript.ManageFooterTest')
-data.setCell(0, 3, 3050);
+data.setCell(0, 1, 'verifyUserisAbleToAccessManageContactPage')
+data.setCell(0, 2, 'testscript.ManageContactTest')
+data.setCell(0, 3, 2606);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserIsAbletoAccessManageFooterPage')
-data.setCell(1, 2, 'testscript.ManageFooterTest')
-data.setCell(1, 3, 2800);
+data.setCell(1, 1, 'verifyuserIsAbleToAccessManageCategoryPage')
+data.setCell(1, 2, 'testscript.ManageCategoryTest')
+data.setCell(1, 3, 2580);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserIsAbletoClickAdminUser')
+data.setCell(2, 2, 'testscript.AdminUserTest')
+data.setCell(2, 3, 1914);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserIsAbletoAccessManageFooterPage')
+data.setCell(3, 2, 'testscript.ManageFooterTest')
+data.setCell(3, 3, 1586);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserisAbleToAccessManageNewsPage')
+data.setCell(4, 2, 'testscript.ManageNewsTest')
+data.setCell(4, 3, 1387);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateSaveBtnInManageNews')
+data.setCell(5, 2, 'testscript.ManageNewsUpdateTest')
+data.setCell(5, 3, 1301);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateSaveBtnInManageNews')
+data.setCell(6, 2, 'testscript.ManageNewsUpdateTest')
+data.setCell(6, 3, 1285);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateSaveBtnInManageNews')
+data.setCell(7, 2, 'testscript.ManageNewsUpdateTest')
+data.setCell(7, 3, 1261);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateUpdateBtnInManageContact')
+data.setCell(8, 2, 'testscript.ManageContactTest')
+data.setCell(8, 3, 1066);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateUpdatebtnInManageFooterPage')
+data.setCell(9, 2, 'testscript.ManageFooterTest')
+data.setCell(9, 3, 1034);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyUserisAbleToLout')
+data.setCell(10, 2, 'testscript.LogOutTest')
+data.setCell(10, 3, 935);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyUserIsAbleToLoginUsingValidCredentials')
+data.setCell(11, 2, 'testscript.LoginTest')
+data.setCell(11, 3, 522);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyUserisAbleToLoginWithInvalidUsername')
+data.setCell(12, 2, 'testscript.LoginTest')
+data.setCell(12, 3, 439);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyUserIsAbleToLoginUsingInvalidCredentials')
+data.setCell(13, 2, 'testscript.LoginTest')
+data.setCell(13, 3, 426);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyUserIsAbletoLoginUsingInvalidPassword')
+data.setCell(14, 2, 'testscript.LoginTest')
+data.setCell(14, 3, 397);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,30 +668,209 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscript.ManageFooterTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscript.ManageCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserIntialization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateUpdatebtnInManageFooterPage</span>
-                <span class="method-start">2935 ms</span>
+                <span class="method-name">verifyuserIsAbleToAccessManageCategoryPage</span>
+                <span class="method-start">1487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=validateUpdatebtnInManageFooterPage status=SUCCESS method=ManageFooterTest.validate...)</span>
-                <span class="method-start">5988 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyuserIsAbleToAccessManageCategoryPage status=SUCCESS method=ManageCategoryTest...)</span>
+                <span class="method-start">4072 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageNewsUpdateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">4241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSaveBtnInManageNews</span>
+                <span class="method-start">5330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=validateSaveBtnInManageNews status=SKIP method=ManageNewsUpdateTest.validateSaveBtn...)</span>
+                <span class="method-start">6619 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserIntialization(chrome)</span>
-                <span class="method-start">6339 ms</span>
+                <span class="method-start">6768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSaveBtnInManageNews</span>
+                <span class="method-start">7829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=validateSaveBtnInManageNews status=SKIP method=ManageNewsUpdateTest.validateSaveBtn...)</span>
+                <span class="method-start">9092 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">9248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateSaveBtnInManageNews</span>
+                <span class="method-start">10391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=validateSaveBtnInManageNews status=FAILURE method=ManageNewsUpdateTest.validateSave...)</span>
+                <span class="method-start">11698 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">11979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUpdateBtnInManageContact</span>
+                <span class="method-start">13084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=validateUpdateBtnInManageContact status=SUCCESS method=ManageContactTest.validateUp...)</span>
+                <span class="method-start">14151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">14318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserisAbleToAccessManageContactPage</span>
+                <span class="method-start">15350 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserisAbleToAccessManageContactPage status=SUCCESS method=ManageContactTest.v...)</span>
+                <span class="method-start">17957 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">18097 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserisAbleToAccessManageNewsPage</span>
+                <span class="method-start">19186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserisAbleToAccessManageNewsPage status=SUCCESS method=ManageNewsTest.verifyU...)</span>
+                <span class="method-start">20573 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">20713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserisAbleToLout</span>
+                <span class="method-start">21777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserisAbleToLout status=SUCCESS method=LogOutTest.verifyUserisAbleToLout()[pr...)</span>
+                <span class="method-start">22713 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageFooterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">22868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUpdatebtnInManageFooterPage</span>
+                <span class="method-start">23944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=validateUpdatebtnInManageFooterPage status=SUCCESS method=ManageFooterTest.validate...)</span>
+                <span class="method-start">24979 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">25130 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserIsAbletoAccessManageFooterPage</span>
-                <span class="method-start">7659 ms</span>
+                <span class="method-start">26196 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=verifyUserIsAbletoAccessManageFooterPage status=SUCCESS method=ManageFooterTest.ver...)</span>
-                <span class="method-start">10461 ms</span>
+                <span class="method-start">27783 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">27932 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToLoginUsingInvalidCredentials</span>
+                <span class="method-start">28968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToLoginUsingInvalidCredentials status=SUCCESS method=LoginTest.veri...)</span>
+                <span class="method-start">29395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">29546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToLoginUsingValidCredentials</span>
+                <span class="method-start">30638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.verify...)</span>
+                <span class="method-start">31161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">31331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbletoLoginUsingInvalidPassword(abcde, qwerty)</span>
+                <span class="method-start">32556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbletoLoginUsingInvalidPassword status=SUCCESS method=LoginTest.verifyU...)</span>
+                <span class="method-start">32955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">33098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserisAbleToLoginWithInvalidUsername</span>
+                <span class="method-start">34289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserisAbleToLoginWithInvalidUsername status=SUCCESS method=LoginTest.verifyUs...)</span>
+                <span class="method-start">34728 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserIntialization(chrome)</span>
+                <span class="method-start">34878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbletoClickAdminUser</span>
+                <span class="method-start">35934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyUserIsAbletoClickAdminUser status=SUCCESS method=AdminUserTest.verifyUserIsAb...)</span>
+                <span class="method-start">37850 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
