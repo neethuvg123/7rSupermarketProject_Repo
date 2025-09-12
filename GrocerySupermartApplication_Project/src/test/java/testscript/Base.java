@@ -60,6 +60,8 @@ public class Base {
 			throw new Exception("invalid browser name");
 		}
 		driver.get(properties.getProperty("url"));
+		
+		
 		driver.manage().window().maximize();
 	}
 
