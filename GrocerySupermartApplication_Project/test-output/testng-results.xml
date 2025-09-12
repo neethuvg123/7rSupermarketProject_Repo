@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-11T11:52:17 IST" name="Suite" finished-at="2025-09-11T11:52:23 IST" duration-ms="6368">
+  <suite started-at="2025-09-12T08:09:07 IST" name="Suite" finished-at="2025-09-12T08:09:17 IST" duration-ms="10693">
     <groups>
       <group name="regression">
-        <method signature="ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" name="verifyUserIsAbletoAccessManageFooterPage" class="testscript.ManageFooterTest"/>
+        <method signature="ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" name="verifyUserIsAbletoAccessManageFooterPage" class="testscript.ManageFooterTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-09-11T11:52:17 IST" name="EdgeTest" finished-at="2025-09-11T11:52:23 IST" duration-ms="6368">
+    <test started-at="2025-09-12T08:09:07 IST" name="EdgeTest" finished-at="2025-09-12T08:09:17 IST" duration-ms="10693">
       <class name="testscript.ManageFooterTest">
-        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:17 IST" name="browserIntialization" finished-at="2025-09-11T11:52:19 IST" duration-ms="1560" status="PASS">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:07 IST" name="browserIntialization" finished-at="2025-09-12T08:09:10 IST" duration-ms="2930" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,22 +21,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserIntialization -->
-        <test-method signature="validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:19 IST" name="validateUpdatebtnInManageFooterPage" description="user is able to validate UPDATE BUTTON in the page" finished-at="2025-09-11T11:52:20 IST" duration-ms="1615" status="PASS">
+        <test-method signature="validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:10 IST" name="validateUpdatebtnInManageFooterPage" description="user is able to validate UPDATE BUTTON in the page" finished-at="2025-09-12T08:09:13 IST" duration-ms="3050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUpdatebtnInManageFooterPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:20 IST" name="browserQuit" finished-at="2025-09-11T11:52:20 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:13 IST" name="browserQuit" finished-at="2025-09-12T08:09:13 IST" duration-ms="348" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateUpdatebtnInManageFooterPage status=SUCCESS method=ManageFooterTest.validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=validateUpdatebtnInManageFooterPage status=SUCCESS method=ManageFooterTest.validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:20 IST" name="browserIntialization" finished-at="2025-09-11T11:52:21 IST" duration-ms="1132" status="PASS">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:13 IST" name="browserIntialization" finished-at="2025-09-12T08:09:14 IST" duration-ms="1319" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserIntialization -->
-        <test-method signature="verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:21 IST" name="verifyUserIsAbletoAccessManageFooterPage" description="User is able to access the Manage Footer Page" finished-at="2025-09-11T11:52:23 IST" duration-ms="1701" status="PASS">
+        <test-method signature="verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:14 IST" name="verifyUserIsAbletoAccessManageFooterPage" description="User is able to access the Manage Footer Page" finished-at="2025-09-12T08:09:17 IST" duration-ms="2800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbletoAccessManageFooterPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@2cd76f31]" started-at="2025-09-11T11:52:23 IST" name="browserQuit" finished-at="2025-09-11T11:52:23 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@5fe94a96]" started-at="2025-09-12T08:09:17 IST" name="browserQuit" finished-at="2025-09-12T08:09:17 IST" duration-ms="178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbletoAccessManageFooterPage status=SUCCESS method=ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2cd76f31] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbletoAccessManageFooterPage status=SUCCESS method=ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>

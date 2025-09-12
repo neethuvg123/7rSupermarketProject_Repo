@@ -5,7 +5,7 @@
   <test name="EdgeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testscript.ManageNewsTest"/> 
+      <class name="testscript.ManageFooterTest"/> 
     </classes>
   </test> 
 </suite> <!-- Suite -->

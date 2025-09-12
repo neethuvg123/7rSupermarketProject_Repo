@@ -2,6 +2,7 @@ package testscript;
 
 import java.io.IOException;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import constant.Constant;
 import pages.LoginPage;
@@ -46,11 +47,11 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test(retryAnalyzer = retry.Retry.class, description = " user is able to login invalid password")
+	@Test(dataProvider ="LoginProvider" ,retryAnalyzer = retry.Retry.class, description = " user is able to login invalid password")
 
-	public void verifyUserIsAbletoLoginUsingInvalidPassword() throws IOException {
-		String username = ExcelUtility.getStringData(3, 0, "LoginPage");
-		String password = ExcelUtility.getIntegerData(3, 1, "Loginpage");
+	public void verifyUserIsAbletoLoginUsingInvalidPassword(String username, String password) throws IOException {
+		//String username = ExcelUtility.getStringData(3, 0, "LoginPage");
+		//String password = ExcelUtility.getIntegerData(3, 1, "Loginpage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(username);
 		loginpage.enterPassword(password);
@@ -59,5 +60,11 @@ public class LoginTest extends Base {
 		Assert.assertTrue(alertmsg, Constant.LOGIN_WITH_INVALID_CREDENTIAL);
 
 	}
-
+	@DataProvider(name="LoginProvider")
+	public Object[][] getDataFromTestData() throws IOException{
+		return new Object[][] {{ExcelUtility.getStringData(4, 0,"loginpage"),ExcelUtility.getStringData(4,1,"loginpage")}};
+		
+	
+	
+	}
 }
