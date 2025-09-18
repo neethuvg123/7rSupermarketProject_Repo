@@ -1,35 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [multiBrowserTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="chromeTest(failed)">
+<suite thread-count="2" parallel="classes" name="Failed suite [multiBrowserTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.ManageNewsUpdateTest">
+      <class name="testscript.ManageFooterTest">
         <methods>
           <include name="browserIntialization"/>
-          <include name="validateSaveBtnInManageNews"/>
+          <include name="validateUpdatebtnInManageFooterPage"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscript.ManageNewsUpdateTest -->
+      </class> <!-- testscript.ManageFooterTest -->
+      <class name="testscript.ManageContactTest">
+        <methods>
+          <include name="browserIntialization"/>
+          <include name="validateUpdateBtnInManageContact"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.ManageContactTest -->
     </classes>
   </test> <!-- chromeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="Edge"/>
+  <test thread-count="2" parallel="classes" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testscript.LoginTest">
+      <class name="testscript.ManageFooterTest">
         <methods>
           <include name="browserIntialization"/>
-          <include name="verifyUserIsAbletoLoginUsingInvalidPassword"/>
+          <include name="verifyUserIsAbletoAccessManageFooterPage"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscript.LoginTest -->
-      <class name="testscript.ManageNewsUpdateTest">
+      </class> <!-- testscript.ManageFooterTest -->
+      <class name="testscript.ManageContactTest">
         <methods>
-          <include name="validateSaveBtnInManageNews"/>
+          <include name="verifyUserisAbleToAccessManageContactPage"/>
           <include name="browserIntialization"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscript.ManageNewsUpdateTest -->
+      </class> <!-- testscript.ManageContactTest -->
     </classes>
-  </test> <!-- EdgeTest(failed) -->
+  </test> <!-- firefoxTest(failed) -->
 </suite> <!-- Failed suite [multiBrowserTesting] -->

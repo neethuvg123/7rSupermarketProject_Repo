@@ -46,7 +46,6 @@ public class ManageCategoryPage {
 	}
 
 	public ManageCategoryPage category(String value) {
-
 		category.sendKeys(value);
 		return this;
 	}
@@ -83,7 +82,7 @@ public class ManageCategoryPage {
 		return this;
 	}
 
-	public boolean viewAlert() {
+	public boolean isViewAlert() {
 		return alert.isDisplayed();
 	}
 }

@@ -13,19 +13,18 @@ import org.openqa.selenium.io.FileHandler;
 public class ScreenShotUtility {
 
 	public void getScreenShot(WebDriver driver, String failedTestCase) throws IOException {
-		TakesScreenshot scrShot = (TakesScreenshot) driver; 
-					
+		TakesScreenshot scrShot = (TakesScreenshot) driver;
+
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
 		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
-		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot"); 
-												
-																					
+		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");
+
 		if (!f1.exists()) {
-			f1.mkdirs(); //make directory
+			f1.mkdirs(); // make directory
 		}
 		String destination = System.getProperty("user.dir") + "//outputScreenShot//" + failedTestCase + timeStamp
 				+ ".png";
 		File finalDestination = new File(destination);
-		FileHandler.copy(screenShot, finalDestination); 
+		FileHandler.copy(screenShot, finalDestination);
 	}
 }

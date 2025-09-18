@@ -7,16 +7,16 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import pages.AdminUserPage;
-import pages.LogOutPage;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class AdminUserTest extends Base {
 	AdminUserPage adminuserpage;
-	LogOutPage logout;
+	HomePage logout;
 
-	@Test(description = "user is able to access te Admin User Page", retryAnalyzer = retry.Retry.class)
+	@Test(description = "User is able to access te Admin User Page", retryAnalyzer = retry.Retry.class)
 
 	public void verifyUserIsAbletoClickAdminUser() throws IOException {
 		String username = ExcelUtility.getStringData(1, 0, "LoginPage");
@@ -29,7 +29,7 @@ public class AdminUserTest extends Base {
 		String usernames = faker.creatARandomFirstName();
 		String passwords = faker.creatARandomLastName();
 		adminuserpage.clickNewButton().updateUserame(usernames).updatePassword(passwords).enterOption().clickSave();
-		boolean msg = adminuserpage.viewAlertmsg();
+		boolean msg = adminuserpage.isViewAlertmsg();
 		Assert.assertTrue(msg, Constant.ADMIN_USER_PAGE);
 	}
 

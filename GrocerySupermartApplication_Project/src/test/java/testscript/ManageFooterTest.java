@@ -6,14 +6,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constant;
-import pages.LogOutPage;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageFooterPage;
 import utilities.ExcelUtility;
 
 public class ManageFooterTest extends Base {
 	ManageFooterPage managefooterpage;
-	LogOutPage logout;
+	HomePage logout;
 
 	@Test(retryAnalyzer = retry.Retry.class, description = "User is able to access the Manage Footer Page", groups = {
 			"regression" })
@@ -29,7 +29,7 @@ public class ManageFooterTest extends Base {
 		String email = ExcelUtility.getStringData(2, 1, "ManageFooterPage");
 		String phone = ExcelUtility.getIntegerData(2, 2, "ManageFooterPage");
 		managefooterpage.clickButton().updateAddress(address).updateEmail(email).updatePhone(phone).clickUpdateButton();
-		boolean msg = managefooterpage.alertViewAlertMessage();
+		boolean msg = managefooterpage.isAlertViewAlertMessage();
 		Assert.assertTrue(msg, Constant.ALERT_MSG_DISPLAY);
 	}
 
@@ -43,7 +43,7 @@ public class ManageFooterTest extends Base {
 		logout = loginpage.clickSignin();
 		managefooterpage = logout.moreinfo_manageFooterpage();
 		managefooterpage.clickButton();
-		boolean msg = managefooterpage.updateButonEnabled();
+		boolean msg = managefooterpage.isUpdateButonEnabled();
 		Assert.assertTrue(msg, Constant.UPDATE_BTN);
 	}
 

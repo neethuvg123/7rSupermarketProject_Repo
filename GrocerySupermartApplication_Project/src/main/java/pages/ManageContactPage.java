@@ -15,10 +15,10 @@ public class ManageContactPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "//i[@class='fas fa-edit']")
 	WebElement actionbutton;
-	
+
 	@FindBy(xpath = "//input[@type='text' and @id='phone']")
 	WebElement phone;
 
@@ -39,11 +39,10 @@ public class ManageContactPage {
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement alerts;
-	
+
 	public ManageContactPage clickAction() {
 		PageUtility page = new PageUtility();
-		page.javaScriptclick(driver,actionbutton);
-		//actionbutton.click();
+		page.javaScriptclick(driver, actionbutton);
 		return this;
 	}
 
@@ -81,15 +80,15 @@ public class ManageContactPage {
 
 	public ManageContactPage clickUpdate() {
 		PageUtility page = new PageUtility();
-		page.javaScriptclick(driver,buton);
+		page.javaScriptclick(driver, buton);
 		return this;
 	}
 
-	public boolean viewAlert() {
+	public boolean isViewAlert() {
 		return alerts.isDisplayed();
 	}
 
-	public boolean updateBtnEnabled() {
+	public boolean isUpdateBtnEnabled() {
 		return buton.isEnabled();
 	}
 }

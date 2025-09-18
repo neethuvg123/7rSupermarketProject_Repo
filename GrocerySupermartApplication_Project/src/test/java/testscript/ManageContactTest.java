@@ -6,17 +6,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constant;
-import pages.LogOutPage;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageContactPage;
 import utilities.ExcelUtility;
 
 public class ManageContactTest extends Base {
 	ManageContactPage managecontactpage;
-	LogOutPage logout;
+	HomePage logout;
 
-	@Test(retryAnalyzer = retry.Retry.class, description = " User is able to access te Manage Contact Test page", groups = {
-			"regression" })
+	@Test(retryAnalyzer = retry.Retry.class, description = " User is able to access te Manage Contact Test page", groups = {"regression" })
 
 	public void verifyUserisAbleToAccessManageContactPage() throws IOException {
 
@@ -25,7 +24,6 @@ public class ManageContactTest extends Base {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(username).enterPassword(password);
 		logout = loginpage.clickSignin();
-		
 		String phno = ExcelUtility.getIntegerData(1, 0, "ManageContact");
 		String email = ExcelUtility.getStringData(1, 1, "ManageContact");
 		String addres = ExcelUtility.getStringData(1, 2, "ManageContact");
@@ -34,7 +32,7 @@ public class ManageContactTest extends Base {
 		managecontactpage = logout.moreinfo_manageContactPage();
 		managecontactpage.clickAction().updatePhone(phno).updateEmail(email).updateAddress(addres)
 				.updateDeliveryTime(time).updateDeliveryCharge(charge).clickUpdate();
-		boolean alertmsg = managecontactpage.viewAlert();
+		boolean alertmsg = managecontactpage.isViewAlert();
 		Assert.assertTrue(alertmsg, Constant.ALERT_MSG_DISPLAY);
 	}
 
@@ -46,11 +44,10 @@ public class ManageContactTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUsername(username).enterPassword(password);
-		logout = loginpage.clickSignin();
-		
+		logout = loginpage.clickSignin();	
 		managecontactpage = logout.moreinfo_manageContactPage();
 		managecontactpage.clickAction();
-		boolean alertmsg = managecontactpage.updateBtnEnabled();
+		boolean alertmsg = managecontactpage.isUpdateBtnEnabled();
 		Assert.assertTrue(alertmsg, Constant.UPDATE_BTN);
 
 	}

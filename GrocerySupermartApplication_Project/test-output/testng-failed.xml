@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="generateReport.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.ManageNewsUpdateTest">
+      <class name="testscript.AdminUserTest">
         <methods>
+          <include name="verifyUserIsAbletoClickAdminUser"/>
           <include name="browserIntialization"/>
-          <include name="validateSaveBtnInManageNews"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscript.ManageNewsUpdateTest -->
+      </class> <!-- testscript.AdminUserTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

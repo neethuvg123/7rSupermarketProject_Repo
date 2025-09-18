@@ -3,7 +3,7 @@ package constant;
 public class Constant {
 	public static final String TESTDATAFILE = System.getProperty("user.dir")
 			+ "\\src\\test\\resources\\ProjectTestdata.xlsx";
-	
+
 	public static final String TESTDATAIMAGE2 = System.getProperty("user.dir") + "\\src\\test\\resources\\pizz.jpeg";
 	public static final String TESTDATAIMAGE3 = System.getProperty("user.dir") + "\\src\\test\\resources\\rice.jpeg";
 	public static final String TESTDATAIMAGE4 = System.getProperty("user.dir") + "\\src\\test\\resources\\slice.jpeg";
@@ -23,6 +23,3 @@ public class Constant {
 
 	public static final String UPDATE_BTN = "Update btn is not enabled ";
 }
-
-
-                                                                                                                        

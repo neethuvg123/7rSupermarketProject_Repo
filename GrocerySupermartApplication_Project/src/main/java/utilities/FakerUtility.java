@@ -9,26 +9,21 @@ public class FakerUtility {
 	public String creatARandomFirstName() {
 
 		return faker.name().firstName();
-
 	}
 
 	public String creatARandomLastName() {
 
 		return faker.name().lastName();
-
 	}
 
 	public String generateAddress() {
 
 		return faker.address().fullAddress();
-
 	}
 
 	public String generateEmail() {
 
 		return faker.internet().emailAddress();
-
 	}
-	
-	
+
 }

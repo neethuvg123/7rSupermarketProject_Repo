@@ -2,6 +2,7 @@ package testscript;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -19,6 +20,7 @@ import org.testng.annotations.Parameters;
 import constant.Constant;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ScreenShotUtility;
+import utilities.WaitUtility;
 
 public class Base {
 
@@ -27,6 +29,7 @@ public class Base {
 
 	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
+	
 	public void browserIntialization(String browser) throws Exception {
 
 		try {
@@ -40,13 +43,8 @@ public class Base {
 		if (browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			Map<String, Object> prefs = new HashMap<>();
-			// prefs.put("profile.default_content_setting_values.notifications", 2); //
-			// block all
 			prefs.put("profile.password_manager_leak_detection", false); // Disable "Change password" alerts
 			options.setExperimentalOption("prefs", prefs);
-			// WebDriver driver = new ChromeDriver(options);
-			// ChromeOptions option=new ChromeOptions();
-			// option.addArguments("--disable-notifications");
 			driver = new ChromeDriver(options);
 		}
 		else if (browser.equalsIgnoreCase("edge")) {
@@ -54,19 +52,19 @@ public class Base {
 			driver = new EdgeDriver();
 		}
 		else if (browser.equalsIgnoreCase("firefox")) {
+			 WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		else {
 			throw new Exception("invalid browser name");
 		}
 		driver.get(properties.getProperty("url"));
-		
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));
 		driver.manage().window().maximize();
 	}
 
 	@AfterMethod(alwaysRun = true)
-
+	
 	public void browserQuit(ITestResult iTestResult) throws IOException {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
 			ScreenShotUtility scrShot = new ScreenShotUtility(); // creating obj

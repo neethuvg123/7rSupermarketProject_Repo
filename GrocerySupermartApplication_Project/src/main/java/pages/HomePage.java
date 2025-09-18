@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogOutPage {
+public class HomePage {
 
 	public WebDriver driver;
 
-	public LogOutPage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		}
@@ -44,7 +44,6 @@ public class LogOutPage {
 	public AdminUserPage moreinfo_AdminPage() {
 		moreinfo_adminPage.click();
 		return new AdminUserPage(driver);
-
 	}
 
 	public ManageCategoryPage moreinfo_manageCategoryPage() {
@@ -67,11 +66,7 @@ public class LogOutPage {
 		return new ManageNewsPage(driver);
 	}
 
-	public ManageNewsUpdatePage moreinfo_manageNesUpdatePage() {
-		moreinfo_manageNewsUpdate.click();
-		return new ManageNewsUpdatePage(driver);
-	}
-
+	
 	public void clickAdmin() {
 		admin.click();
 	}

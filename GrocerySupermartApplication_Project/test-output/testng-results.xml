@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="2" ignored="2" total="17" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-12T15:01:11 IST" name="Suite" finished-at="2025-09-12T15:01:16 IST" duration-ms="4941">
+  <suite started-at="2025-09-18T18:36:04 IST" name="Suite" finished-at="2025-09-18T18:37:05 IST" duration-ms="61243">
     <groups>
       <group name="regression">
-        <method signature="ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2d3379b4]" name="verifyUserIsAbletoAccessManageFooterPage" class="testscript.ManageFooterTest"/>
+        <method signature="ManageCategoryTest.verifyuserIsAbleToAccessManageCategoryPage()[pri:0, instance:testscript.ManageCategoryTest@21be3395]" name="verifyuserIsAbleToAccessManageCategoryPage" class="testscript.ManageCategoryTest"/>
+        <method signature="ManageContactTest.verifyUserisAbleToAccessManageContactPage()[pri:0, instance:testscript.ManageContactTest@7d7758be]" name="verifyUserisAbleToAccessManageContactPage" class="testscript.ManageContactTest"/>
+        <method signature="ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@68746f22]" name="verifyUserIsAbletoAccessManageFooterPage" class="testscript.ManageFooterTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2025-09-12T15:01:11 IST" name="ChromeTest" finished-at="2025-09-12T15:01:16 IST" duration-ms="4941">
-      <class name="testscript.ManageFooterTest">
-        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@2d3379b4]" started-at="2025-09-12T15:01:11 IST" name="browserIntialization" finished-at="2025-09-12T15:01:12 IST" duration-ms="1835" status="PASS">
+    <test started-at="2025-09-18T18:36:04 IST" name="ChromeTest" finished-at="2025-09-18T18:37:05 IST" duration-ms="61243">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:18 IST" name="browserIntialization" finished-at="2025-09-18T18:36:19 IST" duration-ms="1347" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,15 +23,123 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserIntialization -->
-        <test-method signature="verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2d3379b4]" started-at="2025-09-12T15:01:12 IST" name="verifyUserIsAbletoAccessManageFooterPage" description="User is able to access the Manage Footer Page" finished-at="2025-09-12T15:01:15 IST" duration-ms="2832" status="PASS">
+        <test-method signature="validateSaveBtnInManageNews()[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:19 IST" name="validateSaveBtnInManageNews" description="user is able to update Manage News page" finished-at="2025-09-18T18:36:22 IST" duration-ms="2685" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbletoAccessManageFooterPage -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@2d3379b4]" started-at="2025-09-12T15:01:15 IST" name="browserQuit" finished-at="2025-09-12T15:01:16 IST" duration-ms="223" status="PASS">
+        </test-method> <!-- validateSaveBtnInManageNews -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:22 IST" name="browserQuit" finished-at="2025-09-18T18:36:22 IST" duration-ms="200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbletoAccessManageFooterPage status=SUCCESS method=ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@2d3379b4] output={null}]]]>
+                <![CDATA[[TestResult name=validateSaveBtnInManageNews status=SUCCESS method=ManageNewsTest.validateSaveBtnInManageNews()[pri:0, instance:testscript.ManageNewsTest@2bdd8394] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:22 IST" name="browserIntialization" finished-at="2025-09-18T18:36:23 IST" duration-ms="1321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserisAbleToAccessManageNewsPage()[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:23 IST" name="verifyUserisAbleToAccessManageNewsPage" description="User is able to access the Manage News Page" finished-at="2025-09-18T18:36:25 IST" duration-ms="1963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbleToAccessManageNewsPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2bdd8394]" started-at="2025-09-18T18:36:25 IST" name="browserQuit" finished-at="2025-09-18T18:36:25 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserisAbleToAccessManageNewsPage status=SUCCESS method=ManageNewsTest.verifyUserisAbleToAccessManageNewsPage()[pri:0, instance:testscript.ManageNewsTest@2bdd8394] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.LogOutTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.LogOutTest@5f9edf14]" started-at="2025-09-18T18:36:25 IST" name="browserIntialization" finished-at="2025-09-18T18:36:27 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserisAbleToLout()[pri:0, instance:testscript.LogOutTest@5f9edf14]" started-at="2025-09-18T18:36:27 IST" name="verifyUserisAbleToLout" description="user is able to logout sucessfully" finished-at="2025-09-18T18:36:28 IST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbleToLout -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogOutTest@5f9edf14]" started-at="2025-09-18T18:36:28 IST" name="browserQuit" finished-at="2025-09-18T18:36:28 IST" duration-ms="194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserisAbleToLout status=SUCCESS method=LogOutTest.verifyUserisAbleToLout()[pri:0, instance:testscript.LogOutTest@5f9edf14] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.LogOutTest -->
+      <class name="testscript.ManageFooterTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:28 IST" name="browserIntialization" finished-at="2025-09-18T18:36:29 IST" duration-ms="1358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:29 IST" name="validateUpdatebtnInManageFooterPage" description="user is able to validate UPDATE BUTTON in the page" finished-at="2025-09-18T18:36:31 IST" duration-ms="1393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdatebtnInManageFooterPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:31 IST" name="browserQuit" finished-at="2025-09-18T18:36:31 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUpdatebtnInManageFooterPage status=SUCCESS method=ManageFooterTest.validateUpdatebtnInManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@68746f22] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:31 IST" name="browserIntialization" finished-at="2025-09-18T18:36:33 IST" duration-ms="1458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:33 IST" name="verifyUserIsAbletoAccessManageFooterPage" description="User is able to access the Manage Footer Page" finished-at="2025-09-18T18:36:35 IST" duration-ms="2299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbletoAccessManageFooterPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTest@68746f22]" started-at="2025-09-18T18:36:35 IST" name="browserQuit" finished-at="2025-09-18T18:36:35 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbletoAccessManageFooterPage status=SUCCESS method=ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()[pri:0, instance:testscript.ManageFooterTest@68746f22] output={null}]]]>
               </value>
             </param>
           </params>
@@ -37,6 +147,426 @@
           </reporter-output>
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.ManageFooterTest -->
+      <class name="testscript.ManageContactTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:10 IST" name="browserIntialization" finished-at="2025-09-18T18:36:11 IST" duration-ms="1370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="validateUpdateBtnInManageContact()[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:11 IST" name="validateUpdateBtnInManageContact" description=" User his able to validate te UPDATE BUTTON in te page" finished-at="2025-09-18T18:36:13 IST" duration-ms="1415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdateBtnInManageContact -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:13 IST" name="browserQuit" finished-at="2025-09-18T18:36:13 IST" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUpdateBtnInManageContact status=SUCCESS method=ManageContactTest.validateUpdateBtnInManageContact()[pri:0, instance:testscript.ManageContactTest@7d7758be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:13 IST" name="browserIntialization" finished-at="2025-09-18T18:36:14 IST" duration-ms="1238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserisAbleToAccessManageContactPage()[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:14 IST" name="verifyUserisAbleToAccessManageContactPage" description=" User is able to access te Manage Contact Test page" finished-at="2025-09-18T18:36:17 IST" duration-ms="3349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbleToAccessManageContactPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@7d7758be]" started-at="2025-09-18T18:36:17 IST" name="browserQuit" finished-at="2025-09-18T18:36:18 IST" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserisAbleToAccessManageContactPage status=SUCCESS method=ManageContactTest.verifyUserisAbleToAccessManageContactPage()[pri:0, instance:testscript.ManageContactTest@7d7758be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageContactTest -->
+      <class name="testscript.AdminUserTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:36:44 IST" name="browserIntialization" finished-at="2025-09-18T18:36:45 IST" duration-ms="1331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method retried="true" signature="verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:36:45 IST" name="verifyUserIsAbletoClickAdminUser" description="User is able to access te Admin User Page" finished-at="2025-09-18T18:36:52 IST" duration-ms="7195" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [705af1c51ced9b4a4afe0fb8d8bb12a4, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52851/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 705af1c51ced9b4a4afe0fb8d8bb12a4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [705af1c51ced9b4a4afe0fb8d8bb12a4, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52851/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 705af1c51ced9b4a4afe0fb8d8bb12a4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at pages.AdminUserPage.isViewAlertmsg(AdminUserPage.java:64)
+at testscript.AdminUserTest.verifyUserIsAbletoClickAdminUser(AdminUserTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbletoClickAdminUser -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:36:52 IST" name="browserQuit" finished-at="2025-09-18T18:36:53 IST" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbletoClickAdminUser status=SKIP method=AdminUserTest.verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:36:53 IST" name="browserIntialization" finished-at="2025-09-18T18:36:54 IST" duration-ms="1464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method retried="true" signature="verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:36:54 IST" name="verifyUserIsAbletoClickAdminUser" description="User is able to access te Admin User Page" finished-at="2025-09-18T18:37:01 IST" duration-ms="6959" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8778645f846ee00ccf8758e43aa1881, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55548/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8778645f846ee00ccf8758e43aa1881]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8778645f846ee00ccf8758e43aa1881, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55548/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8778645f846ee00ccf8758e43aa1881
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at pages.AdminUserPage.isViewAlertmsg(AdminUserPage.java:64)
+at testscript.AdminUserTest.verifyUserIsAbletoClickAdminUser(AdminUserTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbletoClickAdminUser -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:37:01 IST" name="browserQuit" finished-at="2025-09-18T18:37:01 IST" duration-ms="251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbletoClickAdminUser status=SKIP method=AdminUserTest.verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:37:01 IST" name="browserIntialization" finished-at="2025-09-18T18:37:03 IST" duration-ms="1459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:37:03 IST" name="verifyUserIsAbletoClickAdminUser" description="User is able to access te Admin User Page" finished-at="2025-09-18T18:37:05 IST" duration-ms="2215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbletoClickAdminUser -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@68878f6d]" started-at="2025-09-18T18:37:05 IST" name="browserQuit" finished-at="2025-09-18T18:37:05 IST" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbletoClickAdminUser status=SUCCESS method=AdminUserTest.verifyUserIsAbletoClickAdminUser()[pri:0, instance:testscript.AdminUserTest@68878f6d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.AdminUserTest -->
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:35 IST" name="browserIntialization" finished-at="2025-09-18T18:36:36 IST" duration-ms="1402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserIsAbleToLoginUsingInvalidCredentials()[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:36 IST" name="verifyUserIsAbleToLoginUsingInvalidCredentials" description="User is able to login using both invalid credentials" finished-at="2025-09-18T18:36:37 IST" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginUsingInvalidCredentials -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:37 IST" name="browserQuit" finished-at="2025-09-18T18:36:37 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingInvalidCredentials status=SUCCESS method=LoginTest.verifyUserIsAbleToLoginUsingInvalidCredentials()[pri:0, instance:testscript.LoginTest@2f01783a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:37 IST" name="browserIntialization" finished-at="2025-09-18T18:36:38 IST" duration-ms="1287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:38 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" description="User is able to login using valid credential" finished-at="2025-09-18T18:36:39 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:39 IST" name="browserQuit" finished-at="2025-09-18T18:36:39 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.verifyUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2f01783a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:40 IST" name="browserIntialization" finished-at="2025-09-18T18:36:41 IST" duration-ms="1330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserIsAbletoLoginUsingInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:41 IST" name="verifyUserIsAbletoLoginUsingInvalidPassword" description=" user is able to login invalid password" data-provider="LoginProvider" finished-at="2025-09-18T18:36:41 IST" duration-ms="596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbletoLoginUsingInvalidPassword -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:41 IST" name="browserQuit" finished-at="2025-09-18T18:36:42 IST" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbletoLoginUsingInvalidPassword status=SUCCESS method=LoginTest.verifyUserIsAbletoLoginUsingInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:42 IST" name="browserIntialization" finished-at="2025-09-18T18:36:43 IST" duration-ms="1372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyUserisAbleToLoginWithInvalidUsername()[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:43 IST" name="verifyUserisAbleToLoginWithInvalidUsername" description="user is able to login using invalid username" finished-at="2025-09-18T18:36:44 IST" duration-ms="615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserisAbleToLoginWithInvalidUsername -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2f01783a]" started-at="2025-09-18T18:36:44 IST" name="browserQuit" finished-at="2025-09-18T18:36:44 IST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserisAbleToLoginWithInvalidUsername status=SUCCESS method=LoginTest.verifyUserisAbleToLoginWithInvalidUsername()[pri:0, instance:testscript.LoginTest@2f01783a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.LoginTest -->
+      <class name="testscript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserIntialization(java.lang.String)[pri:0, instance:testscript.ManageCategoryTest@21be3395]" started-at="2025-09-18T18:36:04 IST" name="browserIntialization" finished-at="2025-09-18T18:36:06 IST" duration-ms="2043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserIntialization -->
+        <test-method signature="verifyuserIsAbleToAccessManageCategoryPage()[pri:0, instance:testscript.ManageCategoryTest@21be3395]" started-at="2025-09-18T18:36:06 IST" name="verifyuserIsAbleToAccessManageCategoryPage" description=" User is able to access Manage Catergory Page" finished-at="2025-09-18T18:36:10 IST" duration-ms="3445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyuserIsAbleToAccessManageCategoryPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageCategoryTest@21be3395]" started-at="2025-09-18T18:36:10 IST" name="browserQuit" finished-at="2025-09-18T18:36:10 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyuserIsAbleToAccessManageCategoryPage status=SUCCESS method=ManageCategoryTest.verifyuserIsAbleToAccessManageCategoryPage()[pri:0, instance:testscript.ManageCategoryTest@21be3395] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>

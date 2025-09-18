@@ -4,17 +4,17 @@
 
   <test name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
+ 
   <groups>
   <run>
   <include name="regression"></include>
   </run>
   </groups>
+ 
   <classes>
-  
        <class name="testscript.ManageCategoryTest"/>
          <class name="testscript.ManageContactTest"/>
-         <class name="testscript.ManageFooterTest"/>
-      
+         <class name="testscript.ManageFooterTest"/>   
     </classes>
   </test> 
 </suite> <!-- Suite -->

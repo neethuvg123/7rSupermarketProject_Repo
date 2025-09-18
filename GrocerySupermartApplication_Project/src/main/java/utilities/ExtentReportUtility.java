@@ -15,5 +15,5 @@ public class ExtentReportUtility {
 		extentReports.setSystemInfo("Name", "neethu");
 		return extentReports;
 	}
-	
+
 }

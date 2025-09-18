@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class ManageFooterPage {
 	public WebDriver driver;
@@ -36,12 +37,15 @@ public class ManageFooterPage {
 	public ManageFooterPage clickButton() {
 		PageUtility page = new PageUtility();
 		page.javaScriptclick(driver, button);
-		// button.click();
 		return this;
 	}
 
 	public ManageFooterPage updateAddress(String addres) {
 		address.clear();
+		//PageUtility page = new PageUtility();
+		//page.sendKeysclick(driver, address, addres);
+		WaitUtility wait= new WaitUtility();
+		wait.waitForClick(driver, address);
 		address.sendKeys(addres);
 		return this;
 	}
@@ -65,11 +69,11 @@ public class ManageFooterPage {
 		return this;
 	}
 
-	public boolean alertViewAlertMessage() {
+	public boolean isAlertViewAlertMessage() {
 		return alerts.isDisplayed();
 	}
 
-	public boolean updateButonEnabled() {
+	public boolean isUpdateButonEnabled() {
 		return updatebutton.isEnabled();
 	}
 

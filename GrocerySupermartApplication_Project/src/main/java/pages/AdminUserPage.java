@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.PageUtility;
 
 public class AdminUserPage {
-	
+
 	public WebDriver driver;
 
 	public AdminUserPage(WebDriver driver) {
@@ -31,7 +31,7 @@ public class AdminUserPage {
 	@FindBy(xpath = "//button[@type='submit' and @name='Create']")
 	WebElement savebutton;
 
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement alerts;
 
 	public AdminUserPage clickNewButton() {
@@ -60,7 +60,7 @@ public class AdminUserPage {
 		return this;
 	}
 
-	public boolean viewAlertmsg() {
+	public boolean isViewAlertmsg() {
 		return alerts.isDisplayed();
 	}
 

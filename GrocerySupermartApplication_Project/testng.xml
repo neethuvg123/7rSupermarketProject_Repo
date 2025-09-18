@@ -6,10 +6,10 @@
 	<listener class-name="generateReport.Listeners"></listener>
 </listeners>
 
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-     
+     <class name="testscript.ManageCategoryTest"/>    
       <class name="testscript.ManageContactTest"/>
       <class name="testscript.ManageNewsTest"/>
       <class name="testscript.LogOutTest"/>

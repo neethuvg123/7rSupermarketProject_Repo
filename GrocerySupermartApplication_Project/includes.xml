@@ -4,12 +4,15 @@
 
   <test name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
-    <classes>
+    <classes> 
+      
       <class name="testscript.ManageFooterTest"> 
       <methods>
-      <include name="verifyUserIsAbletoAccessManageFooterPage"></include>
+      <include name="verifyUserIsAbletoAccessManageFooterPage">
+      </include>
       </methods>
       </class>
+      
     </classes>
   </test> 
 </suite> <!-- Suite -->
