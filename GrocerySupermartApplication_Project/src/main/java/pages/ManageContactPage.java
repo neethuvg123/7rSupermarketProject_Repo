@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class ManageContactPage {
 
@@ -41,12 +42,17 @@ public class ManageContactPage {
 	WebElement alerts;
 
 	public ManageContactPage clickAction() {
+		
 		PageUtility page = new PageUtility();
 		page.javaScriptclick(driver, actionbutton);
 		return this;
 	}
 
 	public ManageContactPage updatePhone(String phonno) {
+		WaitUtility wait= new WaitUtility();
+		wait.waitForElementToBeClickable(driver,phone );
+		PageUtility page = new PageUtility();
+		page.scrollFromTop(driver);
 		phone.clear();
 		phone.sendKeys(phonno);
 		return this;
@@ -71,8 +77,6 @@ public class ManageContactPage {
 	}
 
 	public ManageContactPage updateDeliveryCharge(String charges) {
-		PageUtility page = new PageUtility();
-		page.scrollFromTop(driver);
 		delivcharge.clear();
 		delivcharge.sendKeys(charges);
 		return this;

@@ -41,11 +41,9 @@ public class ManageFooterPage {
 	}
 
 	public ManageFooterPage updateAddress(String addres) {
-		address.clear();
-		//PageUtility page = new PageUtility();
-		//page.sendKeysclick(driver, address, addres);
 		WaitUtility wait= new WaitUtility();
-		wait.waitForClick(driver, address);
+		wait.waitForElementToBeClickable(driver,address );
+		address.clear();
 		address.sendKeys(addres);
 		return this;
 	}

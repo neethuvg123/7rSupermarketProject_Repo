@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -48,8 +49,11 @@ public class Base {
 			driver = new ChromeDriver(options);
 		}
 		else if (browser.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().clearResolutionCache().forceDownload().setup();
-			driver = new EdgeDriver();
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\user\\Downloads\\msedgedriver.exe");
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--start-maximized");
+			driver = new EdgeDriver(options);
 		}
 		else if (browser.equalsIgnoreCase("firefox")) {
 			 WebDriverManager.firefoxdriver().setup();

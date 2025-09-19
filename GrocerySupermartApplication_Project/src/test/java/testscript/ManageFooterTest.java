@@ -33,7 +33,7 @@ public class ManageFooterTest extends Base {
 		Assert.assertTrue(msg, Constant.ALERT_MSG_DISPLAY);
 	}
 
-	@Test(description = "user is able to validate UPDATE BUTTON in the page")
+	@Test(retryAnalyzer = retry.Retry.class, description = "user is able to validate UPDATE BUTTON in the page")
 
 	public void validateUpdatebtnInManageFooterPage() throws IOException {
 		String username = ExcelUtility.getStringData(1, 0, "LoginPage");

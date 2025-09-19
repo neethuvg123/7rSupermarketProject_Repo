@@ -10,7 +10,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
-public class LogOutTest extends Base {
+public class HomePageTest extends Base {
 
 	@Test(description = "user is able to logout sucessfully")
 

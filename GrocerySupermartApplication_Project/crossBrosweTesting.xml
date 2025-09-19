@@ -19,7 +19,7 @@
   
   
   
- <!-- <test name="FireFoxTest">
+ <test name="FireFoxTest">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
     <class name="testscript.ManageCategoryTest"/>   
@@ -31,7 +31,7 @@
       <class name="testscript.LoginTest"/>
        <class name="testscript.AdminUserTest"/>
     </classes>
-  </test>--> <!-- Test -->
+  </test> <!-- Test -->
   
   
   <test name="EdgeTest">
