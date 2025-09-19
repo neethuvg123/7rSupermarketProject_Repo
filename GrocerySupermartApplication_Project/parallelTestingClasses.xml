@@ -12,12 +12,22 @@
     </classes>
   </test>
   
+  
   <test name="firefoxTest">
-    <parameter name="browser" value="edge"></parameter>
+    <parameter name="browser" value="firefox"></parameter>
     <classes>
       <class name="testscript.ManageContactTest"/>  
       <class name="testscript.ManageFooterTest"/>  
     </classes>
   </test>  
+  
+  
+  <test name="EdgeTest">
+    <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testscript.ManageContactTest"/>  
+      <class name="testscript.ManageFooterTest"/>  
+    </classes>
+  </test>
 
 </suite>

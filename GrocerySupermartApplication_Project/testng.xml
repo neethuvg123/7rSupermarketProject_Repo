@@ -7,7 +7,7 @@
 </listeners>
 
   <test thread-count="5" name="ChromeTest">
-  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
      <class name="testscript.ManageContactTest"/>
       <class name="testscript.ManageCategoryTest"/>   

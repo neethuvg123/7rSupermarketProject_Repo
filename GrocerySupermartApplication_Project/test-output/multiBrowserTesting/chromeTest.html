@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 17 20:10:30 IST 2025</td>
+<td>Started on:</td><td>Fri Sep 19 15:07:22 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11736 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7067 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,70 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testscript.ManageFooterTest.validateUpdatebtnInManageFooterPage()'><b>validateUpdatebtnInManageFooterPage</b><br>Test class: testscript.ManageFooterTest<br>Test method: user is able to validate UPDATE BUTTON in the page</td>
-<td><div><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.ManageFooterTest.validateUpdatebtnInManageFooterPage(ManageFooterTest.java:39)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X4B500003
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-	... 24 more
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace200553674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace200553674'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.ManageFooterTest.validateUpdatebtnInManageFooterPage(ManageFooterTest.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X4B500003
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-	... 24 more
-</pre></div></td>
-<td>0</td>
-<td>testscript.ManageFooterTest@3b69e7d1</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -140,106 +76,10 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X4B500003
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.ManageContactTest.validateUpdateBtnInManageContact()'><b>validateUpdateBtnInManageContact</b><br>Test class: testscript.ManageContactTest<br>Test method:  User his able to validate te UPDATE BUTTON in te page</td>
-<td></td>
-<td>2</td>
-<td>testscript.ManageContactTest@639c2c1d</td></tr>
-<tr>
-<td title='testscript.ManageContactTest.verifyUserisAbleToAccessManageContactPage()'><b>verifyUserisAbleToAccessManageContactPage</b><br>Test class: testscript.ManageContactTest<br>Test method:  User is able to access te Manage Contact Test page</td>
+<td title='testscript.ManageCategoryTest.verifyuserIsAbleToAccessManageCategoryPage()'><b>verifyuserIsAbleToAccessManageCategoryPage</b><br>Test class: testscript.ManageCategoryTest<br>Test method:  User is able to access Manage Catergory Page</td>
 <td></td>
 <td>3</td>
-<td>testscript.ManageContactTest@639c2c1d</td></tr>
-<tr>
-<td title='testscript.ManageFooterTest.verifyUserIsAbletoAccessManageFooterPage()'><b>verifyUserIsAbletoAccessManageFooterPage</b><br>Test class: testscript.ManageFooterTest<br>Test method: User is able to access the Manage Footer Page</td>
-<td></td>
-<td>3</td>
-<td>testscript.ManageFooterTest@3b69e7d1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testscript.ManageContactTest.validateUpdateBtnInManageContact()'><b>validateUpdateBtnInManageContact</b><br>Test class: testscript.ManageContactTest<br>Test method:  User his able to validate te UPDATE BUTTON in te page</td>
-<td><div><pre>java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.ManageContactTest.validateUpdateBtnInManageContact(ManageContactTest.java:43)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1950867070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1950867070'><pre>java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtility.getStringData(ExcelUtility.java:23)
-	at testscript.ManageContactTest.validateUpdateBtnInManageContact(ManageContactTest.java:43)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>testscript.ManageContactTest@639c2c1d</td></tr>
+<td>testscript.ManageCategoryTest@33d512c1</td></tr>
 </table><p>
 </body>
 </html>

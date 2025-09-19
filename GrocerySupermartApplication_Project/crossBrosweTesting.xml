@@ -5,31 +5,15 @@
   <test name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-     <class name="testscript.ManageCategoryTest"/>
-      <class name="testscript.ManageNewsUpdateTest"/>
-      <class name="testscript.ManageContactTest"/>
-      <class name="testscript.ManageNewsTest"/>
-      <class name="testscript.LogOutTest"/>
-      <class name="testscript.ManageFooterTest"/> 
-      <class name="testscript.LoginTest"/>
-       <class name="testscript.AdminUserTest"/>
+     <class name="testscript.ManageCategoryTest"/>    
     </classes>
   </test> <!-- Test -->
-  
-  
   
   
  <test name="FireFoxTest">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-    <class name="testscript.ManageCategoryTest"/>   
-      <class name="testscript.ManageNewsUpdateTest"/>
-      <class name="testscript.ManageContactTest"/>
-      <class name="testscript.ManageNewsTest"/>
-      <class name="testscript.LogOutTest"/>
-      <class name="testscript.ManageFooterTest"/> 
-      <class name="testscript.LoginTest"/>
-       <class name="testscript.AdminUserTest"/>
+    <class name="testscript.ManageCategoryTest"/>      
     </classes>
   </test> <!-- Test -->
   
@@ -37,14 +21,7 @@
   <test name="EdgeTest">
   <parameter name="browser" value="edge"></parameter>
     <classes>
-    <class name="testscript.ManageCategoryTest"/>   
-      <class name="testscript.ManageNewsUpdateTest"/>
-      <class name="testscript.ManageContactTest"/>
-      <class name="testscript.ManageNewsTest"/>
-      <class name="testscript.LogOutTest"/>
-      <class name="testscript.ManageFooterTest"/> 
-      <class name="testscript.LoginTest"/>
-       <class name="testscript.AdminUserTest"/>
+    <class name="testscript.ManageCategoryTest"/>       
     </classes>
   </test> <!-- Test -->
   
